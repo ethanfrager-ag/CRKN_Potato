@@ -19,13 +19,3 @@ for (f in files) {
 
 write.csv(all_data, "combined_data.csv", row.names = FALSE)
 
-lookup <- read.csv("~/Documents/usda potato breeding/data_analysis/raw_data/metadata2023/CRKNFamilyNameKey.csv")  
-
-combined <- merge(
-  all_data,          # combined data
-  lookup,            # the lookup table
-  by = "Sample",       # the column name that exists in BOTH files
-  all.x = TRUE       # keep every row of all_data, even if no match is found
-)
-
-write.csv(combined, "combined_with_values.csv", row.names = FALSE)
