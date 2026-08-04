@@ -1,4 +1,4 @@
-# --- read in the combined file and the two lookup files ---
+#open files
 combined <- read.csv("~/Documents/usda potato breeding/data_analysis/raw_data/gravity2023/combined_data.csv", stringsAsFactors = FALSE)     
 Field    <- read.csv("~/Documents/usda potato breeding/data_analysis/raw_data/metadata2023/CRKNOthelloFieldKey_2023.csv", stringsAsFactors = FALSE)            
 FamilyN  <- read.csv("~/Documents/usda potato breeding/data_analysis/raw_data/metadata2023/CRKNFamilyNameKey.csv", stringsAsFactors = FALSE)            
